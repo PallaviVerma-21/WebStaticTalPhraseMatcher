@@ -12,6 +12,12 @@
   <main>
     <h1>Vanilla JavaScript App</h1>
   </main>
+  <script>
+    (async function() {
+        const { text } = await( await fetch(`/api/talphrasehttptrigger?code=2WTcRKXXKtCV7NJe1he9Ue7aCwM2Pgnz9BENdP6Tpm7uAzFuwwrvFA%3D%3D`)).json();
+        document.querySelector('#name').textContent = text;
+    }());
+    </script>
 </body>
 
 </html>
